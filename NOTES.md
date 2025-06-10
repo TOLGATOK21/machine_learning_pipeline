@@ -11,9 +11,28 @@ Bu proje, bulut tabanlı bir makine öğrenimi pipeline’ı oluşturmayı hedef
 
 ## 📚 Öğrendiğim Yeni Kavramlar
 
-  _,_, exc_tb = error_detail.exc_info()   -->  exc_info() 3 ögeli bir lisdte döndürüyor burdada sonuncu elemanı alıyoruz _,_, diyerek
+  `_,_, exc_tb = error_detail.exc_info() `  -->  exc_info() 3 ögeli bir lisdte döndürüyor burdada sonuncu elemanı alıyoruz _,_, diyerek
 
-  'dehasdasd'
+  ## def __init__(self, ....): 
+  Bu sınıftan yeni bir nesne oluşturulduğunda (instance) otomatik olarak çağırılır.
+  Nesneye ait başlangıç verilerini tanımlamak için kullanılır
+  
+  class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age,
+
+   ## def __str__(self): 
+   Nesneyi ekrana açıklanabilir şekilde yazdırmaya yarar. Örneğin p = Person("Ayşe" , 25)
+   print(p) olarak yazdırdığımız zaman terminalde --> Ayşe is 25 years old yazısını alabiliriz.
+
+       def __str__(self):
+        return f"{self.name} is {self.age} years old."
+
+
+
+
+
 
 
 
