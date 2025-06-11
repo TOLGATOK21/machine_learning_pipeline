@@ -1,3 +1,12 @@
+## !!! EKLENMESİ GEREKENLER 
+* APİ VERİ ÇEKİLMELİ
+* 
+
+
+
+
+
+
 # 🧠 Kişisel Proje Notlarım
 Bu dosya, bu projeyi geliştirirken öğrendiğim yeni kavramları, yaşadığım problemleri ve çözümleri belgelemek için oluşturulmuştur. Hem kendi gelişimimi takip etmek hem de başkalarının faydalanması amacıyla paylaşıyorum.
 
@@ -10,6 +19,15 @@ Bu proje, bulut tabanlı bir makine öğrenimi pipeline’ı oluşturmayı hedef
 ---
 
 ## 📚 Öğrendiğim Yeni Kavramlar
+
+
+## Kernel Distribution Function: Çekirdek Dağılım Fonksiyonu, bir veri setindeki her bir veri noktası etrafında bir çekirdek fonksiyonu (kernel function) yerleştirerek ve bu çekirdekleri toplayarak yoğunluk tahminini oluşturur. Matematiksel olarak, bir veri seti $ \{x_1, x_2, \dots, x_n\} $ için çekirdek yoğunluk tahmini şu şekilde ifade edilir:
+
+![alt text](image.png)
+
+## mean imputatiton: 
+  eksik veri var ise --> df.isna().sum()
+  o sütunun ortalaması alınıp doldurulur avantaj ve dezavantajları vardır.
 
   `_,_, exc_tb = error_detail.exc_info() `  -->  exc_info() 3 ögeli bir lisdte döndürüyor burdada sonuncu elemanı alıyoruz _,_, diyerek
 
