@@ -20,11 +20,45 @@ Bu proje, bulut tabanlı bir makine öğrenimi pipeline’ı oluşturmayı hedef
 
 ## 📚 Öğrendiğim Yeni Kavramlar
 
+SımpleImputer ==> Eksik verileri doldurur
+*mean --> ortalamayla doldurur
+*median --> ortanca değerle doldurur
+*most_frequent --> en sık tekrar eden değerler doldurur
 
+
+sklearn.compose ==> ColumnTransformer sınıfı ile bilinir
+ * Numeric kategoriler -- StandardScaler ile 
+ * Categoryc -- OneHotEncoder ile 
+ * Text kolonlar-- TfidVectorized 
+
+
+
+
+
+numeric_transformer = StandartScaler()
+oh_transformer = OneHotEncoder()
+
+
+from dataclasses import dataclass 
+
+daha temiz bir class yapısı oluşturur. __init__ otomatik olarak gelir. 
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------
 ## Kernel Distribution Function: Çekirdek Dağılım Fonksiyonu, bir veri setindeki her bir veri noktası etrafında bir çekirdek fonksiyonu (kernel function) yerleştirerek ve bu çekirdekleri toplayarak yoğunluk tahminini oluşturur. Matematiksel olarak, bir veri seti $ \{x_1, x_2, \dots, x_n\} $ için çekirdek yoğunluk tahmini şu şekilde ifade edilir:
 
 ![alt text](image.png)
-
+------------------------------------------------------------------------------
 ## mean imputatiton: 
   eksik veri var ise --> df.isna().sum()
   o sütunun ortalaması alınıp doldurulur avantaj ve dezavantajları vardır.
