@@ -1,7 +1,6 @@
 import os
 from flask import Flask, render_template, request
 import requests
-import pandas as pd
 
 app = Flask(__name__)
 
@@ -31,7 +30,11 @@ def predict_datapoint():
         response = requests.post(ENDPOINT_URL, headers=headers, json=payload)
         response.raise_for_status()
         prediction = response.json()
-        pred_result = prediction.get("result", prediction)
+
+        if isinstance(prediction, dict):
+            pred_result = prediction.get("result", prediction)
+        else:
+            pred_result = prediction
     except Exception as e:
         pred_result = f"Error: {str(e)}"
 
