@@ -10,7 +10,7 @@ ENDPOINT_URL = "http://4170d635-04fa-4c06-ad72-35807e6bf695.canadacentral.azurec
 def home():
     return render_template('home.html')
 
-@app.route('/predict_datapoint', methods=['POST'])
+@app.route('/predict_datapoint', methods=['GET','POST'])
 def predict_datapoint():
     payload = [{
         "gender": request.form.get("gender"),
